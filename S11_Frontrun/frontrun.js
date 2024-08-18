@@ -41,7 +41,7 @@ const main = async () => {
                     const txFrontrun = {
                         to: tx.to,
                         value: tx.value,
-                        maxPriorityFeePerGas: tx.maxPriorityFeePerGas * 1.2,
+                        maxPriorityFeePerGas: tx.maxPriorityFeePerGas , //* 1.2,
                         maxFeePerGas: tx.maxFeePerGas * 1.2,
                         gasLimit: tx.gasLimit * 2,
                         data: tx.data
